@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gen-Z Survey Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=width, initial-scale=1.0" >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="survey-container"> 
+   <header>
+  <h1 id="title">Gen-Z Survey Form.</h1>
+  <p id="description">Thank you for participating in this survey.</p>
+  </header>
+<main>
+  <form id="survey-form" method="POST">
+
+<!--Name Field-->
+<div class="form-group">
+ <label id="name-label" for="name">Name</label>
+ <input id="name" type="text" placeholder="Enter your name" name="name" required>
+</div>
+
+<!--Age-->
+<div class="form-group">
+ <label id="number-label" for="age">Age</label>
+ <input id="number" placeholder="24" name="age" type="number" min="10" max="100" required>
+</div>    
+
+<!--Email-->
+<div class="form-group">
+  <label id="email-label" for="email">Email</label>
+  <input id="email" type="email" name="email" placeholder="Enter your email" required>
+</div>
+
+<!--Gender-->
+<div class="form-group">
+  <label>Gender</label>
+<div>
+ <input id="gender" type="radio" name="gender" value="male">
+ <label value="gender" for="gender">Male</label>
+ <input id="gender" name="gender" value="female" type="radio">
+ <label value="gender" for="gender">Female</label>
+ <input id="gender" name="gender" value="non-binary" type="radio">
+ <label for="gender">Non-binary</label>
+</div>
+</div>
+
+<!--Current Occupation-->
+<div class="form-group">
+  <label for="dropdown">Occupation</label>
+    <select id="dropdown" name="occupation" type="dropdown">
+      <option name="occ-p"value="">Select occupation</options>
+      <option name="occ-p" value="student">Student</options>
+      <option name="occ-p" value="working">Working</options>
+      <option name="occ-p" value="unemployed">Unemployed</options>
+    </select>
+</div>
+
+<!--Digital/Social Media-->
+<div class="form-group">
+  <label for="soc_med">What social media do you use the most?</label>
+  <select id="soc_med" name="soc_med" type="dropdown">
+    <option name="soc_med" value="">Select social media</options>
+    <option name="soc_med" value="instagram">Instagram</options>
+    <option name="soc_med" value="tiktok">Tiktok</options>
+    <option name="soc_med" value="twitter">Twitter(X)</options>
+    <option name="soc_med" value="snapchat">Snapchat</options>
+    <option name="soc_med" value="youtube">Youtube</options>
+    <option name="soc_med" value="pinterest">Pinterest</options>
+    <option name="soc_med" value="spotify">Spotify</options>
+  </select>
+ </div> 
+ <div class="form-group">
+  <label for="content">What kind of social media content do you consume the most?</label>
+  <div>
+  <input name="content" id="memes" type="radio" value="memes">
+  <label for="memes">Memes</label>
+  <input name="content" id="news" type="radio" value="news">
+  <label for="news">News</label>
+  <input name="content" id="lifestyle" type="radio" value="lifestyle">
+  <label for="lifestyle">Lifestyle</label>
+  <input name="content" id="fashion" type="radio" value="fashion">
+  <label for="fashion">Fashion</label>
+  <input name="content" id="gaming" value="gaming" type="radio">
+  <label for="gaming">Gaming</label>
+</div>  
+</div>
+
+<!--Lifestyle and Interests-->
+<div class="form-group">
+<label for="hobbies">How do you usually spend your free time?</label>
+<select type="dropdown" name="hobbies" id="hobbies">
+  <option value="">Select hobby</options>
+  <option value="shows">Streaming movies and shows</options>
+  <option value="friends">Hanging with friends</options>
+  <option value="sm">Scrolling through social media</options>
+  <option value="gaming">Playing video games</options>
+  </select>
+</div> 
+
+<!--Work and Productivity-->
+<div class="form-group"></div>
+  <label for="work">Which of these would determine work success?</label>
+  <input type="checkbox" name="work" value="job" id="work">
+  <label for="job">Employment</label>
+  <input type="checkbox" name="work" value="hustle" id="work">
+  <label for="hustle">Hustle</label>
+<div class="form-group">
+  <label for="degree">Do you believe traditional degrees are necessary for success?</label>
+  <input name="degree" id="yes-degree" value="yes" type="checkbox">
+  <label for="yes-degree">Yes</label>
+  <input name="degree" id="no-degree" value="no" type="checkbox">
+  <label for="no-degree">No</label>
+</div>
+
+<div class="form-group">
+  <label for="feedback">What do you think defines Gen-Z the most?</label>
+  <textarea id="feedback" name="feedback" rows="3" cols="70" placeholder="Share your thoughts here..."></textarea>
+</div>
+
+<div class="form-group">
+  <button id="submit" type="submit">Submit</button>
+</div>
+
+
+
+  
+  
+  </form>
+  </main>
+  
+ </div> 
+</body>
+</html>

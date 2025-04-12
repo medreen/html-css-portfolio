@@ -1,0 +1,78 @@
+body {
+    font-family: Helvetica;
+    background-color: #dfdfe2;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin:0;
+    
+  }
+  
+  header{
+    background-color: #27292b;
+    color: #f4f4f4;
+    text-align: center;
+    border-radius: 15px;
+    
+  }
+  
+  .survey-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow:  0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select, textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  label{
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  button[type="submit"] {
+    width: 20%;
+    background-color: #27292b;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #dfdfe2;
+    color: #27292b
+  }
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta name = "viewport" content="width=device=width, initial-scale=1.0">
+    <meta charset = "UTF-8">
+    <title>
+     Survey Form
+    </title> 
+    <link rel ="stylesheet" href = "style.css">   
+  </head>
+    
+  <body>
+    <div class="form-container">
+    <header>
+    <h1>Barbie Fan Survey Form.</h1>
+    <p>For all the Barbie/Coqquette aesthetic dolls.</p>
+  </header>
+    <form id="Survey Form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for ="name">Name: </label>
+        <input placeholder="Joanna K..." type="text" id="name" >
+        <label for="age">Age: </label>
+        <input type="number" name="age" placeholder="22" id="age">
+        <label for="options">Choose an aesthetic: </label>
+        <select id="options" name="aesthetic">
+          <option value ="Drag Queen">Drag Queen</option>
+          <option value="Pink Barbie">Pink Barbie</option>
+          <option value="Bratz Doll">Bratz Doll</option>
+          <option value="Pink Goth">Pink Goth</option>
+        </select>
+        <label for="email">Email: </label>
+        <input placeholder="joannak@..." type="text" name="email" id="email">
+      </fieldset>
+      <fieldset>
+        <legend>About Myself</legend>
+        <label for="description">Describe yourself briefly:</label>
+        <input type="text" name="description" id="description">
+        <label for animals>Which animal describes you and why?</label>
+        <input type="text" placeholder="A cat is my spirit animal simply because...">
+        <label for="fav_color">Favourite Color: </label>
+        <input type="text" name="fav_color" placeholder="baby-pink" id="fav_color">
+      </fieldset>
+      <fieldset>
+        <legend>Barbie Knowledge</legend> 
+        <label for="barbie_cartoon">Favourite Barbie Cartoon:</label>
+        <input type="text" name="barbie_cartoon" id="barbie_cartoon" placeholder="Barbie Mariphosa...">
+        <label for="slang">Favourite Barbie Slang:</label>
+        <input type="text" name="slang" id="slang" placeholder="Pink-tastic!...">
+      </fieldset>
+      <fieldset>
+        <legend>About aesthetic style</legend>
+        <label for="aesthetic_style">Tell us more about your aesthetic choice:</label>
+        <input type="text" name="aesthetic_style" id="aesthetic_style" placeholder="I love bratz doll aesthetic...">
+      </fieldset>
+      <button>Submit</button>
+      
+    </form>
+  </div>
+
+  </body>
+</html>
